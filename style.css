@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #674517;
+    background: #fffdf0;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffd83d;
+    padding: 17px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(100, 70, 0, 0.2);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #704500;
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #704500;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background: #f3b900;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 55px 20px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #ffe36b,
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            #ffe87f,
+            transparent 30%
+        ),
+        #fffbdc;
+}
+
+.home-content {
+    position: relative;
+    z-index: 5;
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* ================= FOTO ================= */
+
+.foto {
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 0 auto 22px;
+    background: white;
+    border: 9px solid #f4c400;
+
+    box-shadow:
+        0 12px 30px rgba(120, 80, 0, 0.25);
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================= TEXT HOME ================= */
+
+.welcome {
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.home h1 {
+    font-size: 48px;
+    color: #8a5700;
+    margin-bottom: 12px;
+}
+
+.nama-panggilan {
+    display: inline-block;
+    background: #ffd83d;
+    padding: 10px 34px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.deskripsi {
+    max-width: 680px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.tombol {
+    display: inline-block;
+    margin-top: 25px;
+    background: #f3bd00;
+    color: white;
+    text-decoration: none;
+    padding: 13px 27px;
+    border-radius: 28px;
+    font-weight: bold;
+}
+
+.tombol:hover {
+    background: #dca900;
+}
+
+
+/* ================= STIKER LUCU ================= */
+
+.hiasan {
+    position: absolute;
+    font-size: 42px;
+    z-index: 2;
+    animation: goyang 3s ease-in-out infinite;
+}
+
+.hiasan1 {
+    left: 7%;
+    top: 25%;
+    font-size: 48px;
+}
+
+.hiasan2 {
+    right: 8%;
+    top: 22%;
+    font-size: 50px;
+}
+
+.hiasan3 {
+    left: 15%;
+    bottom: 18%;
+    font-size: 40px;
+}
+
+.hiasan4 {
+    right: 18%;
+    bottom: 18%;
+    font-size: 45px;
+}
+
+.hiasan5 {
+    left: 25%;
+    top: 12%;
+    font-size: 32px;
+}
+
+.hiasan6 {
+    right: 28%;
+    top: 15%;
+    font-size: 35px;
+}
+
+.hiasan7 {
+    left: 45%;
+    bottom: 10%;
+    font-size: 35px;
+}
+
+@keyframes goyang {
+
+    0%, 100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}
+
+
+/* ================= SAKURA ================= */
+
+.sakura {
+    position: absolute;
+    left: 5%;
+    bottom: 55px;
+    font-size: 50px;
+    color: #ed6f9d;
+    transform: rotate(-5deg);
+    z-index: 3;
+}
+
+.sakura span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ed6f9d;
+}
+
+
+/* ================= SEKOLAH ================= */
+
+.sekolah {
+    position: absolute;
+    right: 7%;
+    bottom: 45px;
+    font-size: 90px;
+}
+
+
+/* ================= SECTION ================= */
+
+.section {
+    padding: 85px 8%;
+    text-align: center;
+    background: #fffdf0;
+}
+
+.portfolio {
+    background: #fff1a8;
+}
+
+.judul-kecil {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #b77a00;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 35px;
+    color: #754900;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   MY HOBBY / PORTFOLIO
+   ===================================================== */
+
+.portfolio {
+    padding: 70px 20px;
+    background: #fffbea;
+}
+
+
+/* tulisan MY HOBBY */
+
+.portfolio .judul-kecil {
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: #a96b00;
+    margin-bottom: 14px;
+}
+
+
+/* judul besar */
+
+.portfolio h2 {
+    font-size: 36px;
+    color: #704000;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+
+/* ================= KUMPULAN CARD ================= */
+
+.portfolio .cards {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+
+/* ================= CARD HOBBY ================= */
+
+.portfolio .card {
+    width: auto;
+    min-height: 390px;
+
+    background: white;
+
+    padding: 10px 10px 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 25px rgba(128, 96, 0, 0.18);
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+
+/* efek saat mouse diarahkan */
+
+.portfolio .card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(128, 96, 0, 0.25);
+}
+
+
+/* ================= GAMBAR HOBBY ================= */
+
+.portfolio .card img {
+    width: 100%;
+    height: 165px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+}
+
+
+/* ================= JUDUL HOBBY ================= */
+
+.portfolio .card h3 {
+    color: #a96500;
+
+    font-size: 19px;
+
+    margin: 18px 8px 12px;
+
+    line-height: 1.4;
+}
+
+
+/* ================= PENJELASAN HOBBY ================= */
+
+.portfolio .card p {
+    color: #754400;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    padding: 0 12px;
+
+    margin: 0;
+}
+
+
+/* ================= BOX ================= */
+
+.kotak {
+    max-width: 760px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(128, 96, 0, 0.15);
+
+    line-height: 1.8;
+}
+
+.profile p {
+    padding: 10px;
+    border-bottom: 1px solid #f5df91;
+}
+
+
+/* =====================================================
+   ABOUT ME
+   ===================================================== */
+
+/* ================= MY HOBBY ================= */
+
+.portfolio {
+    background: #fff1a8;
+    padding: 80px 6%;
+}
+
+.portfolio .cards {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.portfolio .card {
+    width: 100%;
+    background: white;
+
+    padding: 10px 10px 25px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(128, 96, 0, 0.18);
+
+    overflow: hidden;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.portfolio .card:hover {
+    transform: translateY(-8px);
+}
+
+.portfolio .card img {
+    width: 100%;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    display: block;
+}
+
+.portfolio .card h3 {
+    color: #a86b00;
+
+    font-size: 19px;
+
+    margin: 18px 8px 12px;
+}
+
+.portfolio .card p {
+    color: #674517;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    padding: 0 12px;
+}
+
+
+/* ================= HP ================= */
+
+@media (max-width: 950px) {
+
+    .portfolio .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .portfolio .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio .card img {
+        height: 210px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .contact-btn {
+        width: 90%;
+        max-width: 300px;
+        height: 75px;
+        font-size: 20px;
+    }
+
+    .contact-table-box {
+        padding: 12px;
+    }
+
+    .contact-table th,
+    .contact-table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+
+/* ================= CONTACT AESTHETIC ================= */
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    width: 250px;
+    height: 85px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 28px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: white;
+    text-decoration: none;
+
+    border: 4px solid white;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+
+/* WHATSAPP */
+
+.contact-btn.whatsapp {
+    background: linear-gradient(
+        135deg,
+        #25D366,
+        #128C7E
+    );
+}
+
+.contact-btn.whatsapp:hover {
+    transform: translateY(-8px) scale(1.05);
+}
+
+
+/* INSTAGRAM */
+
+.contact-btn.instagram {
+    background: linear-gradient(
+        135deg,
+        #833AB4,
+        #E1306C,
+        #F77737,
+        #FCAF45
+    );
+}
+
+.contact-btn.instagram:hover {
+    transform: translateY(-8px) scale(1.05);
+}
